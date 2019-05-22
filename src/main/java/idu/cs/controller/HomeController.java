@@ -18,8 +18,6 @@ public class HomeController {
 	@Autowired UserRepository userRepo; // Dependency Injection
 	@GetMapping("/")
 	public String home(Model model) {
-		model.addAttribute("test", "인덕 컴소");
-		model.addAttribute("egy", "유응구");
 		return "index";
 	}
 	@GetMapping("/register")
